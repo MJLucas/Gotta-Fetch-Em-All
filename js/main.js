@@ -1,8 +1,8 @@
 // FETCH KANTO POKEMON
 
-const pokedex = document.getElementById("pokedex");
+const kantoPokedex = document.getElementById("kantoPokedex");
 
-console.log(pokedex);
+console.log(kantoPokedex);
 
 const fetchKantoPokemon = () => {
 
