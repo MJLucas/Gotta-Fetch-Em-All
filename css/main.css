@@ -1,3 +1,53 @@
 body {
-    
+    background-color: #845EC2;
+    font-family: Nunito;
+    margin: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 60px;
+}
+
+.card {
+    list-style: none;
+    padding: 40px;
+    background-color: #F4F4F4;
+    color: #222222;
+}
+
+.card-image {
+
+}
+
+.card-id {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.card-type {
+
+}
+
+.card-attribute {
+
+}
+
+#kantoPokedex {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 40px;
 }

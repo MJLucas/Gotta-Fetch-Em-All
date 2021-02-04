@@ -36,7 +36,21 @@ const fetchKantoPokemon = () => {
 };
 
 const displayKantoPokemon = (pokemon) => {
+    
     console.log(pokemon);
+
+    const pokemonHTMLString = pokemon.map(kantoPokemon => `
+    <li class="card">
+        <img class="card-image" src="${kantoPokemon.image}"/>
+        <h2 class="card-id">#${kantoPokemon.id}</h2>
+        <h3 class="card-title">${kantoPokemon.name}</h3>
+        <h4 class="card-type">${kantoPokemon.type}</h4>
+        <p class="card-attribute">${kantoPokemon.height}m & ${kantoPokemon.weight}kg</p>
+    </li>
+    `).join('')
+
+    kantoPokedex.innerHTML = pokemonHTMLString;
+    
 }
 
 fetchKantoPokemon();
