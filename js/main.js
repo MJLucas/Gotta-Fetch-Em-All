@@ -23,7 +23,7 @@ const fetchKantoPokemon = () => {
             id: data.id,
             name: data.name,
             image: data.sprites['front_default'],
-            type: data.types.map((type) => type.type.name).join(', '),
+            type: data.types.map((type) => type.type.name).join(' & '),
             height: data.height,
             weight: data.weight
             
