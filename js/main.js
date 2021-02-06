@@ -43,13 +43,12 @@ const displayKantoPokemon = (pokemon) => {
         <img class="card-image" src="${kantoPokemon.image}"/>
         <h2 class="card-id">#${kantoPokemon.id}</h2>
         <h3 class="card-title">${kantoPokemon.name}</h3>
-        <h4 class="card-type">${kantoPokemon.type}</h4>
     </li>
     `).join('')
 
     kantoPokedex.innerHTML = pokemonHTMLString;
     
-}
+};
 
 const selectKantoPokemon = async (id) => {
 
@@ -58,25 +57,33 @@ const selectKantoPokemon = async (id) => {
     const kantoPokemon = await res.json();
     displayPopup(kantoPokemon);
 
-}
+};
 
 const displayPopup = (kantoPokemon) => {
 
     const type = kantoPokemon.types.map((type) => type.type.name).join(' & ')
 
+    const image = kantoPokemon.sprites['front_default'];
+
     const htmlString = `
     <div class="popup">
-        <button class="closePopup()">Close</button>
+        <button id="closeBtn" onclick="closePopup()">Close</button>
         <div class="card">
-            <img class="card-image" src="${kantoPokemon.image}"/>
+            <img class="card-image" src="${image}"/>
             <h2 class="card-id">#${kantoPokemon.id}</h2>
             <h3 class="card-title">${kantoPokemon.name}</h3>
             <h4 class="card-type">${type}</h4>
             <p class="card-attribute">${kantoPokemon.height}m & ${kantoPokemon.weight}kg</p>
         </div>
     </div>
-    `
+    `;
+    kantoPokedex.innerHTML = htmlString + kantoPokedex.innerHTML;
     console.log(htmlString);
-}
+};
+
+const closePopup = () => {
+    const popup = document.querySelector('.popup');
+    popup.parentElement.removeChild(popup);
+};
 
 fetchKantoPokemon();

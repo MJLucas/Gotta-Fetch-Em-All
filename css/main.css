@@ -19,6 +19,7 @@ h1 {
     color: #222222;
     display: grid;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .card:hover {
