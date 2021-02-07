@@ -12,6 +12,13 @@ h1 {
     font-size: 60px;
 }
 
+h2 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
 .card {
     list-style: none;
     padding: 40px;
