@@ -5,6 +5,8 @@
 
 const kantoPokedex = document.getElementById("kantoPokedex");
 
+const pokeCache = {};
+
 const fetchKantoPokemon = () => {
 
     const promises = [];
@@ -27,7 +29,7 @@ const fetchKantoPokemon = () => {
             type: data.types.map((type) => type.type.name).join(' & '),
             height: data.height,
             weight: data.weight
-            
+
         }));
 
         displayKantoPokemon(pokemon);
@@ -37,7 +39,7 @@ const fetchKantoPokemon = () => {
 };
 
 const displayKantoPokemon = (pokemon) => {
-    
+
     const pokemonHTMLString = pokemon.map(kantoPokemon => `
     <li class="card" onclick="selectKantoPokemon(${kantoPokemon.id})">
         <img class="card-image" src="${kantoPokemon.image}"/>
@@ -47,15 +49,25 @@ const displayKantoPokemon = (pokemon) => {
     `).join('')
 
     kantoPokedex.innerHTML = pokemonHTMLString;
-    
+
 };
 
 const selectKantoPokemon = async (id) => {
 
-    const url = `http://pokeapi.co/api/v2/pokemon/${id}`;
-    const res = await fetch(url);
-    const kantoPokemon = await res.json();
-    displayPopup(kantoPokemon);
+    if (!pokeCache[id]) {
+
+        const url = `http://pokeapi.co/api/v2/pokemon/${id}`;
+        const res = await fetch(url);
+        const kantoPokemon = await res.json();
+        pokeCache[id] = kantoPokemon;
+        console.log(pokeCache)
+        displayPopup(kantoPokemon);
+
+    } else {
+
+        displayPopup(pokeCache[id]);
+        
+    }
 
 };
 
