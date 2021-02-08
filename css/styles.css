@@ -6073,7 +6073,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #845EC2 !important;
+  background-color: #B5A5C7 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -10058,7 +10058,7 @@ h3 {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #FF6F91;
+  color: #BD717D;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
@@ -10085,7 +10085,7 @@ h3 {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #845EC2;
+    color: #4B4453;
     background: #FBEAFF;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
@@ -10143,7 +10143,7 @@ h3 {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: #845EC2;
+  background-color: #B5A5C7;
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
