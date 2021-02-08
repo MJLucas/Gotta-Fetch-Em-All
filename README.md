@@ -18,7 +18,7 @@ By using the PokéAPI, the website can pull all of the basic information of each
 
 This is my first real time using **JavaScript** and I really enjoyed using it on this project. I will continue to use JavaScript on side projects to gain a further understanding of this programming language.
 
-### Pokémon
+### What's is Included
 
 Here is a breakdown of all the Pokémon across the different regions that can be accessed on this website:
 
