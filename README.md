@@ -2,20 +2,20 @@
 
 # Gotta Fetch 'Em All
 
-### This one is for all the **Pokémon** fans out there.
+### This one is for **Pokémon** fans.
 
 ## Table of Contents
 
 - [Overview](#overview)
-- [Regions](#regions)
+- [Pokémon & Regions](#pokemon-&-regions)
 - [Want More](#want-more)
 
 ### Overview
 
-The 'Gotta Fetch 'Em All' website was made to demonstrate how *data* can be fetched and used from the [PokéAPI](https://pokeapi.co).
+The '**Gotta Fetch** 'Em All' website was made to demonstrate how *data* can be fetched and used from the [PokéAPI](https://pokeapi.co).
 
 By using the PokéAPI, the website can pull all of the basic information of each Pokémon and display them in an easy to use interface.
 
-### Regions
+### Pokémon & Regions
 
 ### Want More?
