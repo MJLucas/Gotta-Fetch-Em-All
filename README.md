@@ -25,22 +25,30 @@ Included within this project, you can find all of the currently available Pokém
 Here is a breakdown of all the Pokémon across the different regions that can be accessed on this website:
 
 * Kanto Region: 
-  * 001 - 151
+  * Pokémon Available: 001 - 151
 * Johto Region:
-  * 152 - 251
+  * Pokémon Available: 152 - 251
 * Hoenn Region:
-  * 252 - 386
+  * Pokémon Available: 252 - 386
 * Sinnoh Region:
-  * 387 - 493
+  * Pokémon Available: 387 - 493
 * Unova Region:
-  * 494 - 649
+  * Pokémon Available: 494 - 649
 * Kalos Region:
-  * 650 - 721
+  * Pokémon Available: 650 - 721
 * Alola Region:
-  * 722 - 809
+  * Pokémon Available: 722 - 809
 * Galar Region:
-  * 810 - 898
+  * Pokémon Available: 810 - 898
 
 *The **index.html** file is using a [Start Bootstrap](https://startbootstrap.com/theme/freelancer) template. Everything else is coded and all files can be found within this repository.*
 
 ### Conclusion
+
+First of all, thank you for stopping by.
+
+I hope you enjoyed this project just as much as I enjoyed making it.
+
+If you want to see what I'm doing, you can follow me on [Instagram](https://www.instagram.com/markj.lucas/), you can see more of my final work on my [website](http://www.mjlucas.co.uk).
+
+Stay safe and stay awesome! :metal::sunglasses:
