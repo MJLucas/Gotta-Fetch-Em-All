@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Pokémon](#pokemon)
+- [What is Included](#what-is-included)
 - [Conclusion](#conclusion)
 
 ### Overview
