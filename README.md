@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Pokémon & Regions](#pokemon-&-regions)
+- [Pokémon & Regions](#pokemon-and-regions)
 - [Conclusion](#conclusion)
 
 ### Overview
