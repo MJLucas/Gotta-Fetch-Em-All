@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [What is Included](#what-is-included)
+- [What is Included in the Project](#what-is-included-in-the-project)
 - [Conclusion](#conclusion)
 
 ### Overview
