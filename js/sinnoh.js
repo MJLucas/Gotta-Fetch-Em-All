@@ -1,3 +1,6 @@
+// LIST OF ALL POKEDEX GENERATIONS
+// LIST OF POKEDEX GENERATIONS BY ORDER: 1 - 8 (MEGA COMING SOON)
+
 // FETCH KANTO POKEMON
 
 const kantoPokedex = document.getElementById("kantoPokedex");

@@ -1,14 +1,14 @@
-// FETCH KANTO POKEMON
+// FETCH GALAR POKEMON
 
-const kantoPokedex = document.getElementById("kantoPokedex");
+const galarPokedex = document.getElementById("galarPokedex");
 
 const pokeCache = {};
 
-const fetchKantoPokemon = () => {
+const fetchGalarPokemon = () => {
 
     const promises = [];
 
-    for (let i = 1; i <= 151; i++) {
+    for (let i = 810; i <= 898; i++) {
 
         const url = `http://pokeapi.co/api/v2/pokemon/${i}`;
 
@@ -29,36 +29,36 @@ const fetchKantoPokemon = () => {
 
         }));
 
-        displayKantoPokemon(pokemon);
+        displayGalarPokemon(pokemon);
 
     });
 
 };
 
-const displayKantoPokemon = (pokemon) => {
+const displayGalarPokemon = (pokemon) => {
 
-    const pokemonHTMLString = pokemon.map(kantoPokemon => `
-    <li class="card" onclick="selectKantoPokemon(${kantoPokemon.id})">
-        <img class="card-image" src="${kantoPokemon.image}"/>
-        <h2 class="card-id">#${kantoPokemon.id}</h2>
-        <h3 class="card-title">${kantoPokemon.name}</h3>
+    const pokemonHTMLString = pokemon.map(galarPokemon => `
+    <li class="card" onclick="selectGalarPokemon(${galarPokemon.id})">
+        <img class="card-image" src="${galarPokemon.image}"/>
+        <h2 class="card-id">#${galarPokemon.id}</h2>
+        <h3 class="card-title">${galarPokemon.name}</h3>
     </li>
     `).join('')
 
-    kantoPokedex.innerHTML = pokemonHTMLString;
+    galarPokedex.innerHTML = pokemonHTMLString;
 
 };
 
-const selectKantoPokemon = async (id) => {
+const selectGalarPokemon = async (id) => {
 
     if (!pokeCache[id]) {
 
         const url = `http://pokeapi.co/api/v2/pokemon/${id}`;
         const res = await fetch(url);
-        const kantoPokemon = await res.json();
-        pokeCache[id] = kantoPokemon;
+        const galarPokemon = await res.json();
+        pokeCache[id] = galarPokemon;
         console.log(pokeCache)
-        displayPopup(kantoPokemon);
+        displayPopup(galarPokemon);
 
     } else {
 
@@ -68,25 +68,25 @@ const selectKantoPokemon = async (id) => {
 
 };
 
-const displayPopup = (kantoPokemon) => {
+const displayPopup = (galarPokemon) => {
 
-    const type = kantoPokemon.types.map((type) => type.type.name).join(' & ')
+    const type = galarPokemon.types.map((type) => type.type.name).join(' & ')
 
-    const image = kantoPokemon.sprites['front_default'];
+    const image = galarPokemon.sprites['front_default'];
 
     const htmlString = `
     <div class="popup">
         <button id="closeBtn" onclick="closePopup()">Close</button>
         <div class="card">
             <img class="card-image" src="${image}"/>
-            <h2 class="card-id">#${kantoPokemon.id}</h2>
-            <h3 class="card-title">${kantoPokemon.name}</h3>
+            <h2 class="card-id">#${galarPokemon.id}</h2>
+            <h3 class="card-title">${galarPokemon.name}</h3>
             <h4 class="card-type">${type}</h4>
-            <p class="card-attribute">${kantoPokemon.height}m & ${kantoPokemon.weight}kg</p>
+            <p class="card-attribute">${galarPokemon.height}m & ${galarPokemon.weight}kg</p>
         </div>
     </div>
     `;
-    kantoPokedex.innerHTML = htmlString + kantoPokedex.innerHTML;
+    galarPokedex.innerHTML = htmlString + galarPokedex.innerHTML;
     console.log(htmlString);
 };
 
@@ -95,4 +95,4 @@ const closePopup = () => {
     popup.parentElement.removeChild(popup);
 };
 
-fetchKantoPokemon();
+fetchGalarPokemon();
