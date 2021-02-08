@@ -18,7 +18,7 @@ By using the PokéAPI, the website can pull all of the basic information of each
 
 This is my first real time using **JavaScript** and I really enjoyed using it on this project. I will continue to use JavaScript on side projects to gain a further understanding of this programming language.
 
-### What's is Included in the Project
+### What you will see in this project
 
 Included within this project, you can find all of the currently available Pokémon located within their respected region (generation).
 
