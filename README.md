@@ -12,6 +12,10 @@
 
 ### Overview
 
+The 'Gotta Fetch 'Em All' website was made to demonstrate how *data* can be fetched and used from the [PokéAPI](https://pokeapi.co) to display all currently available Pokémon.
+
+This is my first real time using **JavaScript** and to work on a nostalgic project was fun and rewarding.
+
 ### Regions
 
 ### Want More?
