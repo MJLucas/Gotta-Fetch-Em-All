@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Pokémon & Regions](#pokemon-and-regions)
+- [Pokémon and Regions](#pokemon-and-regions)
 - [Conclusion](#conclusion)
 
 ### Overview
@@ -18,7 +18,7 @@ By using the PokéAPI, the website can pull all of the basic information of each
 
 This is my first real time using **JavaScript** and I really enjoyed using it on this project. I will continue to use JavaScript on side projects to gain a further understanding of this programming language.
 
-### Pokémon & Regions
+### Pokémon and Regions
 
 Here is a breakdown of all the Pokémon across the different regions that can be accessed on this website:
 
