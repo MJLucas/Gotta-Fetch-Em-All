@@ -2,6 +2,6 @@
 
 # Gotta Fetch 'Em All
 
-#### This one is for all the **Pokémon** fans out there.
+### This one is for all the **Pokémon** fans out there.
 
 This project is to demonstrate how you can use **JavaScript** to pull data from the [PokéAPI](https://pokeapi.co) and display the information about each Pokémon from each generation.
