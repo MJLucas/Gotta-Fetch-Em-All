@@ -7,18 +7,20 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [What is Included in the Project](#what-is-included-in-the-project)
+- [What's is Included in the Project](#what-is-included-in-the-project)
 - [Conclusion](#conclusion)
 
 ### Overview
 
 To celebrate the 25th anniversary of Pokémon this summer, I decided to create the '**Gotta Fetch 'Em All**' website. This website was made to demonstrate how *data* can be fetched and used from the [PokéAPI](https://pokeapi.co).
 
-By using the PokéAPI, the website can pull all of the basic information of each Pokémon and display them in an easy to use interface.
+By using the PokéAPI, the website can pull all of the basic information of each Pokémon, to which that information will be displayed in an easy to use interface.
 
 This is my first real time using **JavaScript** and I really enjoyed using it on this project. I will continue to use JavaScript on side projects to gain a further understanding of this programming language.
 
-### What is Included in the Project
+### What's is Included in the Project
+
+Included within this project, you can find all of the currently available Pokémon located within their respected region (generation).
 
 Here is a breakdown of all the Pokémon across the different regions that can be accessed on this website:
 
