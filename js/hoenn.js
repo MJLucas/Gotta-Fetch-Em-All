@@ -1,17 +1,14 @@
-// LIST OF ALL POKEDEX GENERATIONS
-// LIST OF POKEDEX GENERATIONS BY ORDER: 1 - 8 (MEGA COMING SOON)
+// FETCH HOENN POKEMON
 
-// FETCH KANTO POKEMON
-
-const kantoPokedex = document.getElementById("kantoPokedex");
+const hoennPokedex = document.getElementById("hoennPokedex");
 
 const pokeCache = {};
 
-const fetchKantoPokemon = () => {
+const fetchHoennPokemon = () => {
 
     const promises = [];
 
-    for (let i = 1; i <= 151; i++) {
+    for (let i = 252; i <= 386; i++) {
 
         const url = `http://pokeapi.co/api/v2/pokemon/${i}`;
 
@@ -32,36 +29,36 @@ const fetchKantoPokemon = () => {
 
         }));
 
-        displayKantoPokemon(pokemon);
+        displayHoennPokemon(pokemon);
 
     });
 
 };
 
-const displayKantoPokemon = (pokemon) => {
+const displayHoennPokemon = (pokemon) => {
 
-    const pokemonHTMLString = pokemon.map(kantoPokemon => `
-    <li class="card" onclick="selectKantoPokemon(${kantoPokemon.id})">
-        <img class="card-image" src="${kantoPokemon.image}"/>
-        <h2 class="card-id">#${kantoPokemon.id}</h2>
-        <h3 class="card-title">${kantoPokemon.name}</h3>
+    const pokemonHTMLString = pokemon.map(hoennPokemon => `
+    <li class="card" onclick="selectHoennPokemon(${hoennPokemon.id})">
+        <img class="card-image" src="${hoennPokemon.image}"/>
+        <h2 class="card-id">#${hoennPokemon.id}</h2>
+        <h3 class="card-title">${hoennPokemon.name}</h3>
     </li>
     `).join('')
 
-    kantoPokedex.innerHTML = pokemonHTMLString;
+    hoennPokedex.innerHTML = pokemonHTMLString;
 
 };
 
-const selectKantoPokemon = async (id) => {
+const selectHoennPokemon = async (id) => {
 
     if (!pokeCache[id]) {
 
         const url = `http://pokeapi.co/api/v2/pokemon/${id}`;
         const res = await fetch(url);
-        const kantoPokemon = await res.json();
-        pokeCache[id] = kantoPokemon;
+        const hoennPokemon = await res.json();
+        pokeCache[id] = hoennPokemon;
         console.log(pokeCache)
-        displayPopup(kantoPokemon);
+        displayPopup(hoennPokemon);
 
     } else {
 
@@ -71,25 +68,25 @@ const selectKantoPokemon = async (id) => {
 
 };
 
-const displayPopup = (kantoPokemon) => {
+const displayPopup = (hoennPokemon) => {
 
-    const type = kantoPokemon.types.map((type) => type.type.name).join(' & ')
+    const type = hoennPokemon.types.map((type) => type.type.name).join(' & ')
 
-    const image = kantoPokemon.sprites['front_default'];
+    const image = hoennPokemon.sprites['front_default'];
 
     const htmlString = `
     <div class="popup">
         <button id="closeBtn" onclick="closePopup()">Close</button>
         <div class="card">
             <img class="card-image" src="${image}"/>
-            <h2 class="card-id">#${kantoPokemon.id}</h2>
-            <h3 class="card-title">${kantoPokemon.name}</h3>
+            <h2 class="card-id">#${hoennPokemon.id}</h2>
+            <h3 class="card-title">${hoennPokemon.name}</h3>
             <h4 class="card-type">${type}</h4>
-            <p class="card-attribute">${kantoPokemon.height}m & ${kantoPokemon.weight}kg</p>
+            <p class="card-attribute">${hoennPokemon.height}m & ${hoennPokemon.weight}kg</p>
         </div>
     </div>
     `;
-    kantoPokedex.innerHTML = htmlString + kantoPokedex.innerHTML;
+    hoennPokedex.innerHTML = htmlString + hoennPokedex.innerHTML;
     console.log(htmlString);
 };
 
@@ -98,4 +95,4 @@ const closePopup = () => {
     popup.parentElement.removeChild(popup);
 };
 
-fetchKantoPokemon();
+fetchHoennPokemon();

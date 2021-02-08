@@ -1,17 +1,14 @@
-// LIST OF ALL POKEDEX GENERATIONS
-// LIST OF POKEDEX GENERATIONS BY ORDER: 1 - 8 (MEGA COMING SOON)
+// FETCH UNOVA POKEMON
 
-// FETCH KANTO POKEMON
-
-const kantoPokedex = document.getElementById("kantoPokedex");
+const unovaPokedex = document.getElementById("unovaPokedex");
 
 const pokeCache = {};
 
-const fetchKantoPokemon = () => {
+const fetchUnovaPokemon = () => {
 
     const promises = [];
 
-    for (let i = 1; i <= 151; i++) {
+    for (let i = 494; i <= 649; i++) {
 
         const url = `http://pokeapi.co/api/v2/pokemon/${i}`;
 
@@ -32,36 +29,36 @@ const fetchKantoPokemon = () => {
 
         }));
 
-        displayKantoPokemon(pokemon);
+        displayUnovaPokemon(pokemon);
 
     });
 
 };
 
-const displayKantoPokemon = (pokemon) => {
+const displayUnovaPokemon = (pokemon) => {
 
-    const pokemonHTMLString = pokemon.map(kantoPokemon => `
-    <li class="card" onclick="selectKantoPokemon(${kantoPokemon.id})">
-        <img class="card-image" src="${kantoPokemon.image}"/>
-        <h2 class="card-id">#${kantoPokemon.id}</h2>
-        <h3 class="card-title">${kantoPokemon.name}</h3>
+    const pokemonHTMLString = pokemon.map(unovaPokemon => `
+    <li class="card" onclick="selectUnovaPokemon(${unovaPokemon.id})">
+        <img class="card-image" src="${unovaPokemon.image}"/>
+        <h2 class="card-id">#${unovaPokemon.id}</h2>
+        <h3 class="card-title">${unovaPokemon.name}</h3>
     </li>
     `).join('')
 
-    kantoPokedex.innerHTML = pokemonHTMLString;
+    unovaPokedex.innerHTML = pokemonHTMLString;
 
 };
 
-const selectKantoPokemon = async (id) => {
+const selectUnovaPokemon = async (id) => {
 
     if (!pokeCache[id]) {
 
         const url = `http://pokeapi.co/api/v2/pokemon/${id}`;
         const res = await fetch(url);
-        const kantoPokemon = await res.json();
-        pokeCache[id] = kantoPokemon;
+        const unovaPokemon = await res.json();
+        pokeCache[id] = unovaPokemon;
         console.log(pokeCache)
-        displayPopup(kantoPokemon);
+        displayPopup(unovaPokemon);
 
     } else {
 
@@ -71,25 +68,25 @@ const selectKantoPokemon = async (id) => {
 
 };
 
-const displayPopup = (kantoPokemon) => {
+const displayPopup = (unovaPokemon) => {
 
-    const type = kantoPokemon.types.map((type) => type.type.name).join(' & ')
+    const type = unovaPokemon.types.map((type) => type.type.name).join(' & ')
 
-    const image = kantoPokemon.sprites['front_default'];
+    const image = unovaPokemon.sprites['front_default'];
 
     const htmlString = `
     <div class="popup">
         <button id="closeBtn" onclick="closePopup()">Close</button>
         <div class="card">
             <img class="card-image" src="${image}"/>
-            <h2 class="card-id">#${kantoPokemon.id}</h2>
-            <h3 class="card-title">${kantoPokemon.name}</h3>
+            <h2 class="card-id">#${unovaPokemon.id}</h2>
+            <h3 class="card-title">${unovaPokemon.name}</h3>
             <h4 class="card-type">${type}</h4>
-            <p class="card-attribute">${kantoPokemon.height}m & ${kantoPokemon.weight}kg</p>
+            <p class="card-attribute">${unovaPokemon.height}m & ${unovaPokemon.weight}kg</p>
         </div>
     </div>
     `;
-    kantoPokedex.innerHTML = htmlString + kantoPokedex.innerHTML;
+    unovaPokedex.innerHTML = htmlString + unovaPokedex.innerHTML;
     console.log(htmlString);
 };
 
@@ -98,4 +95,4 @@ const closePopup = () => {
     popup.parentElement.removeChild(popup);
 };
 
-fetchKantoPokemon();
+fetchUnovaPokemon();
