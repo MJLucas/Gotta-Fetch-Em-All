@@ -24,13 +24,23 @@ Included within this project, you can find all of the currently available Pokém
 
 Here is a breakdown of all the Pokémon across the different regions that can be accessed on this website:
 
-* Kanto Region -> 001 - 151
-* Johto Region -> 152 - 251
-* Hoenn Region -> 252 - 386
-* Sinnoh Region -> 387 - 493
-* Unova Region -> 494 - 649
-* Kalos Region -> 650 - 721
-* Alola Region -> 722 - 809
-* Galar Region -> 810 - 898
+* Kanto Region: 
+  * 001 - 151
+* Johto Region:
+  * 152 - 251
+* Hoenn Region:
+  * 252 - 386
+* Sinnoh Region:
+  * 387 - 493
+* Unova Region:
+  * 494 - 649
+* Kalos Region:
+  * 650 - 721
+* Alola Region:
+  * 722 - 809
+* Galar Region:
+  * 810 - 898
+
+*The **index.html** file is using a [Start Bootstrap](https://startbootstrap.com/theme/freelancer) template. Everything else is coded and all files can be found within this repository.*
 
 ### Conclusion
