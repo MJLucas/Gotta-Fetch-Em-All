@@ -6063,7 +6063,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #4B4453 !important;
+  background-color: #F6F6F6 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9761,7 +9761,7 @@ button.bg-dark:focus {
 }
 
 .text-white {
-  color: #fff !important;
+  color: #34464F !important;
 }
 
 .text-primary {
@@ -10008,7 +10008,7 @@ h3 {
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: #34464F;
 }
 .divider-custom.divider-light .divider-custom-icon {
   color: #fff !important;
