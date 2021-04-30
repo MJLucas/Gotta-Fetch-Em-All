@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Gotta Fetch 'Em All</title>
@@ -13,214 +14,351 @@
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
     <!-- Font Awesome icons -->
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-    
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
     <!-- Core CSS -->
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body id="page-top">
+  <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Gotta Fetch 'Em All</a>
-            <button
-                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
-                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#page-top">Home</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#pokedex">Pokédex</a></li>
-                </ul>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+          >Gotta Fetch 'Em All</a
+        >
+        <button
+          class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#page-top"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="#pokedex"
+                >Pokédex</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Masthead-->
     <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <img class="masthead-avatar mb-5" src="assets/img/Logo.png" alt="" />
-            <h1 class="masthead-heading text-uppercase mb-0">Gotta Fetch 'Em All</h1>
-            <br>
-            <br>
-            <br>
-            <p class="masthead-subheading font-weight-light mb-0">Simple Pokédex built using the PokéAPI.</p>
-        </div>
+      <div class="container d-flex align-items-center flex-column">
+        <img class="masthead-avatar mb-5" src="assets/img/Logo.png" alt="" />
+        <h1 class="masthead-heading text-uppercase mb-0">
+          Gotta Fetch 'Em All
+        </h1>
+        <br />
+        <br />
+        <br />
+        <p class="masthead-subheading font-weight-light mb-0">
+          Simple Pokédex built using the PokéAPI.
+        </p>
+      </div>
     </header>
 
     <!-- Pokédex Section-->
     <section class="page-section portfolio" id="pokedex">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-light mb-0">Select Pokémon Region</h2>
-            <br>
-            <br>
-            <br>
+      <div class="container">
+        <h2
+          class="page-section-heading text-center text-uppercase text-light mb-0"
+        >
+          Select Pokémon Region
+        </h2>
+        <br />
+        <br />
+        <br />
 
-            <!-- Pokémon Region Items-->
-            <div class="row justify-content-center">
-                <!-- Region 1 -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <a href="kanto.html">
-                        <div class="portfolio-item mx-auto">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <p class="masthead-subheading font-weight-dark mb-0">Kanto Region<br>(Gen 1)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pokemon/kanto.png" alt="" />
-                        </div>
-                    </a>
+        <!-- Pokémon Region Items-->
+        <div class="row justify-content-center">
+          <!-- Region 1 -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <a href="kanto.html">
+              <div class="portfolio-item mx-auto">
+                <div
+                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                >
+                  <div
+                    class="portfolio-item-caption-content text-center text-white"
+                  >
+                    <p class="masthead-subheading font-weight-dark mb-0">
+                      Kanto Region<br />(Gen 1)
+                    </p>
+                  </div>
                 </div>
-                <!-- Region 2 -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <a href="johto.html">
-                        <div class="portfolio-item mx-auto">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <p class="masthead-subheading font-weight-dark mb-0">Johto Region<br>(Gen 2)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pokemon/johto.png" alt="" />
-                        </div>
-                    </a>
+                <img
+                  class="img-fluid"
+                  src="assets/img/pokemon/kanto.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <!-- Region 2 -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <a href="johto.html">
+              <div class="portfolio-item mx-auto">
+                <div
+                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                >
+                  <div
+                    class="portfolio-item-caption-content text-center text-white"
+                  >
+                    <p class="masthead-subheading font-weight-dark mb-0">
+                      Johto Region<br />(Gen 2)
+                    </p>
+                  </div>
                 </div>
-                <!-- Region 3 -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <a href="hoenn.html">
-                        <div class="portfolio-item mx-auto">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <p class="masthead-subheading font-weight-dark mb-0">Hoenn Region<br>(Gen 3)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pokemon/hoenn.png" alt="" />
-                        </div>
-                    </a>
+                <img
+                  class="img-fluid"
+                  src="assets/img/pokemon/johto.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <!-- Region 3 -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <a href="hoenn.html">
+              <div class="portfolio-item mx-auto">
+                <div
+                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                >
+                  <div
+                    class="portfolio-item-caption-content text-center text-white"
+                  >
+                    <p class="masthead-subheading font-weight-dark mb-0">
+                      Hoenn Region<br />(Gen 3)
+                    </p>
+                  </div>
                 </div>
-                <!-- Region 4 -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <a href="sinnoh.html">
-                        <div class="portfolio-item mx-auto">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <p class="masthead-subheading font-weight-dark mb-0">Sinnoh Region<br>(Gen 4)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pokemon/sinnoh.png" alt="" />
-                        </div>
-                    </a>
+                <img
+                  class="img-fluid"
+                  src="assets/img/pokemon/hoenn.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <!-- Region 4 -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <a href="sinnoh.html">
+              <div class="portfolio-item mx-auto">
+                <div
+                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                >
+                  <div
+                    class="portfolio-item-caption-content text-center text-white"
+                  >
+                    <p class="masthead-subheading font-weight-dark mb-0">
+                      Sinnoh Region<br />(Gen 4)
+                    </p>
+                  </div>
                 </div>
-                <!-- Region 5 -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <a href="unova.html">
-                        <div class="portfolio-item mx-auto">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <p class="masthead-subheading font-weight-dark mb-0">Unova Region<br>(Gen 5)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pokemon/unova.png" alt="" />
-                        </div>
-                    </a>
+                <img
+                  class="img-fluid"
+                  src="assets/img/pokemon/sinnoh.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <!-- Region 5 -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <a href="unova.html">
+              <div class="portfolio-item mx-auto">
+                <div
+                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                >
+                  <div
+                    class="portfolio-item-caption-content text-center text-white"
+                  >
+                    <p class="masthead-subheading font-weight-dark mb-0">
+                      Unova Region<br />(Gen 5)
+                    </p>
+                  </div>
                 </div>
-                <!-- Region 6 -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <a href="kalos.html">
-                        <div class="portfolio-item mx-auto">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <p class="masthead-subheading font-weight-dark mb-0">Kalos Region<br>(Gen 6)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pokemon/kalos.png" alt="" />
-                        </div>
-                    </a>
+                <img
+                  class="img-fluid"
+                  src="assets/img/pokemon/unova.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <!-- Region 6 -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <a href="kalos.html">
+              <div class="portfolio-item mx-auto">
+                <div
+                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                >
+                  <div
+                    class="portfolio-item-caption-content text-center text-white"
+                  >
+                    <p class="masthead-subheading font-weight-dark mb-0">
+                      Kalos Region<br />(Gen 6)
+                    </p>
+                  </div>
                 </div>
-                <!-- Region 7 -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <a href="alola.html">
-                        <div class="portfolio-item mx-auto">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <p class="masthead-subheading font-weight-dark mb-0">Alola Region<br>(Gen 7)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pokemon/alola.png" alt="" />
-                        </div>
-                    </a>
+                <img
+                  class="img-fluid"
+                  src="assets/img/pokemon/kalos.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <!-- Region 7 -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <a href="alola.html">
+              <div class="portfolio-item mx-auto">
+                <div
+                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                >
+                  <div
+                    class="portfolio-item-caption-content text-center text-white"
+                  >
+                    <p class="masthead-subheading font-weight-dark mb-0">
+                      Alola Region<br />(Gen 7)
+                    </p>
+                  </div>
                 </div>
-                <!-- Region 8 -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <a href="galar.html">
-                        <div class="portfolio-item mx-auto">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <p class="masthead-subheading font-weight-dark mb-0">Galar Region<br>(Gen 8)</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pokemon/galar.png" alt="" />
-                        </div>
-                    </a>
+                <img
+                  class="img-fluid"
+                  src="assets/img/pokemon/alola.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+          <!-- Region 8 -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <a href="galar.html">
+              <div class="portfolio-item mx-auto">
+                <div
+                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                >
+                  <div
+                    class="portfolio-item-caption-content text-center text-white"
+                  >
+                    <p class="masthead-subheading font-weight-dark mb-0">
+                      Galar Region<br />(Gen 8)
+                    </p>
+                  </div>
                 </div>
-            </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/pokemon/galar.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer-->
     <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                </div>
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Find me around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/markj.lucas/" target="blank"><i
-                            class="fab fa-fw fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/MJLucas" target="blank"><i class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/markjohnlucas/" target="blank"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
-                </div>
-                <div class="col-lg-4">
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0"></div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Find me around the Web</h4>
+            <a
+              class="btn btn-outline-light btn-social mx-1"
+              href="https://www.instagram.com/markj.lucas/"
+              target="blank"
+              ><i class="fab fa-fw fa-instagram"></i
+            ></a>
+            <a
+              class="btn btn-outline-light btn-social mx-1"
+              href="https://github.com/MJLucas"
+              target="blank"
+              ><i class="fab fa-fw fa-github"></i
+            ></a>
+            <a
+              class="btn btn-outline-light btn-social mx-1"
+              href="https://www.linkedin.com/in/markjohnlucas/"
+              target="blank"
+              ><i class="fab fa-fw fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div class="col-lg-4"></div>
         </div>
+      </div>
     </footer>
 
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright © MJLucas <script>document.write(new Date().getFullYear())</script></div>
+      <div class="container">
+        Copyright © MJLucas
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </div>
     </div>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     <div class="scroll-to-top d-lg-none position-fixed">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
-                class="fa fa-chevron-up"></i></a>
+      <a
+        class="js-scroll-trigger d-block text-center text-white rounded"
+        href="#page-top"
+        ><i class="fa fa-chevron-up"></i
+      ></a>
     </div>
 
     <!-- Bootstrap core JS-->
@@ -232,7 +370,5 @@
 
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-
-</body>
-
+  </body>
 </html>
