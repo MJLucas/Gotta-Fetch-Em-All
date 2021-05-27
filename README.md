@@ -2,7 +2,7 @@
 
 # Gotta Fetch 'Em All
 
-### This is one for the **Pokémon** fans.
+### This one is for the **Pokémon** fans.
 
 ## Table of Contents
 
@@ -42,6 +42,8 @@ Here is a breakdown of all the Pokémon across the different regions that can be
   * Pokémon Available: 810 - 898
 
 *The **index.html** file is using a [Start Bootstrap](https://startbootstrap.com/theme/freelancer) template. Everything else is coded and all files can be found within this repository.*
+
+![Gotta Fetch 'Em All Screenshots](https://user-images.githubusercontent.com/10834045/119894033-02233b00-bf34-11eb-8d8d-b494222a1763.png)
 
 ### Conclusion
 
